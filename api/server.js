@@ -15,7 +15,6 @@ server.use(express.json());
 
 mongoose.promise = global.Promise;
 mongoose.set({ strictQuery: false });
-// mongoose.createConnection(uri);
 mongoose
   .connect("mongodb://localhost:27017/mern-programing-v2")
   .then(() => {
