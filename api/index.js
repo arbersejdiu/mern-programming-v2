@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express.Router();
 require("./server");
-// app.disable("x-powered-by");
 
 app.get("/api", (req, res) => {
   try {

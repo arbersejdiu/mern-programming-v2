@@ -9,7 +9,6 @@ const port = process.env.PORT || 3000;
 const uri = process.env.DB_URI;
 
 server.use(cors());
-// server.disable("x-powered-by");
 server.use(cookieParser());
 server.use(express.urlencoded({ extended: false }));
 server.use(express.json());
